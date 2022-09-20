@@ -85,8 +85,6 @@ import Menu from "@/components/menu/menu.vue";
 export default {
   data() {
     return {
-      //进度 %
-      scheduleCount: 20,
       // 菜单列表
       menuList: [
         {
@@ -101,10 +99,6 @@ export default {
         },
       ],
     };
-  },
-  mounted() {
-    var a = document.getElementsByClassName("uni-page-head-hd")[0];
-    a.style.opacity = 0;
   },
   methods: {
     // 跳转
