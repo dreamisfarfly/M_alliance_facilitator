@@ -11,7 +11,7 @@
       :title-bold="true"
     >
       <template slot="right">
-        <text class="release-message" @click="jump('/pages/my/addMessage')"
+        <text class="release-message" @click="jump('/pages/my/perfectInformation')"
           >添加</text
         >
       </template>
@@ -150,6 +150,12 @@ export default {
         ? (this.shopList[key].status = 1)
         : (this.shopList[key].status = 0);
     },
+    // 添加店铺
+    jump(path) {
+		uni.navigateTo({
+			url: path
+		})
+	},
   },
 };
 </script>
