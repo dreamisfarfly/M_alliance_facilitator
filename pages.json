@@ -80,7 +80,7 @@
 			}
 		},
 		{
-			"path": "pages/my/perfectInformation",
+			"path": "pages/shopManagement/perfectInformation",
 			"style": {
 				"navigationBarTitleText": "添加店铺",
 				"enablePullDownRefresh": false,

@@ -4,14 +4,14 @@
     <!-- start 导航栏 -->
     <u-navbar
       :is-back="false"
-      title="会员管理"
+      title="店铺管理"
       :background="background"
       title-color="#333333"
       title-size="32"
       :title-bold="true"
     >
       <template slot="right">
-        <text class="release-message" @click="jump('/pages/my/perfectInformation')"
+        <text class="release-message" @click="jump('/pages/shopManagement/perfectInformation')"
           >添加</text
         >
       </template>
