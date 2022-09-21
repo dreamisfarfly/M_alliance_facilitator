@@ -10,7 +10,13 @@
           <img class="user-buddha" src="" />
           <view class="info">
             <view class="user-name-vessel">
-              <text class="user-name">商户名丽丽</text>
+              <view class="user-name">
+                商户名丽丽
+                <img
+                  class="identity-icon"
+                  src="/static/images/service-provider-icon.png"
+                />
+              </view>
               <img
                 class="shopkeeper-icon"
                 src="/static/images/shopkeeper-icon.png"
@@ -142,6 +148,13 @@ export default {
             font-size: 32rpx;
             font-weight: 500;
             color: #ffffff;
+            display: flex;
+            align-items: center;
+            .identity-icon {
+              margin-left: 14rpx;
+              width: 78rpx;
+              height: 30rpx;
+            }
           }
           .shopkeeper-icon {
             margin-left: 20rpx;
