@@ -188,6 +188,8 @@ export default {
   border-bottom: 2rpx solid rgba(0, 0, 0, 0.1);
   .column-list-label {
     width: 202rpx;
+    display: flex;
+    align-items: center;
     .required {
       margin-right: 14rpx;
       font-size: 24rpx;
