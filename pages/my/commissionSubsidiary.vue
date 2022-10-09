@@ -2,7 +2,11 @@
   <!-- start commission-subsidiary -->
   <view class="commission-subsidiary">
     <!-- start commission-subsidiary-list -->
-    <view class="commission-subsidiary-list" v-for="(item,key) in 6" :key="key">
+    <view
+      class="commission-subsidiary-list"
+      v-for="(item, key) in 6"
+      :key="key"
+    >
       <view class="cost-info">
         <view class="cost-info-title">直属会员卡年费</view>
         <view class="cost-info-title">+2000元</view>
@@ -44,8 +48,9 @@ export default {
       align-items: center;
       .cost-info-title {
         font-size: 28rpx;
-        font-weight: 500;
+        font-weight: 550;
         color: #333333;
+        line-height: 40rpx;
       }
     }
     .entry-info {
@@ -57,14 +62,16 @@ export default {
         font-size: 24rpx;
         font-weight: 400;
         color: #999999;
+        line-height: 34rpx;
       }
       .commission-btn {
         width: 92rpx;
         height: 42rpx;
         border-radius: 8rpx;
-        text-align: center;
-        line-height: 42rpx;
         font-size: 20rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .already-recorded {
         border: 2rpx solid #60b251;
