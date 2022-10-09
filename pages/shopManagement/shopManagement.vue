@@ -11,7 +11,9 @@
       :title-bold="true"
     >
       <template slot="right">
-        <text class="release-message" @click="jump('/pages/shopManagement/perfectInformation')"
+        <text
+          class="release-message"
+          @click="jump('/pages/shopManagement/perfectInformation')"
           >添加</text
         >
       </template>
@@ -152,10 +154,10 @@ export default {
     },
     // 添加店铺
     jump(path) {
-		uni.navigateTo({
-			url: path
-		})
-	},
+      uni.navigateTo({
+        url: path,
+      });
+    },
   },
 };
 </script>
@@ -214,6 +216,7 @@ export default {
       .shop-list {
         padding: 32rpx 0 24rpx 0;
         box-sizing: border-box;
+        border-bottom: 2rpx solid rgba(0, 0, 0, 0.05);
         .shop-list-info {
           display: flex;
           .shop-list-info-icon {
@@ -223,21 +226,24 @@ export default {
           .shop-info {
             margin-left: 20rpx;
             .shop-name {
-              font-size: 28rpx;
+              font-size: 32rpx;
               font-weight: 500;
-              color: #000000;
+              color: #333333;
+              line-height: 44rpx;
             }
             .shop-discounts {
               margin-top: 10rpx;
               font-size: 24rpx;
               font-weight: 400;
               color: #999999;
+              line-height: 34rpx;
             }
             .shop-member-price {
               margin-top: 8rpx;
               font-size: 12px;
               font-weight: 400;
               color: #999999;
+              line-height: 34rpx;
             }
           }
         }
