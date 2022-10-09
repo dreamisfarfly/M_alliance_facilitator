@@ -7,7 +7,7 @@
     <!-- start equity -->
     <view class="equity">
       <!-- start equity-name -->
-      <view class="equity-name">注册服务商尊享两大权益</view>
+      <view class="equity-name"> 注册服务商尊享两大权益 </view>
       <!-- end equity-name -->
       <!-- start separator -->
       <view class="separator"></view>
@@ -86,7 +86,9 @@
         </view>
       </view>
       <!-- end 付费信息 -->
-      <view class="payment-btn">立即支付</view>
+      <view class="payment-btn">
+        <text class="payment-btn-font">立即支付</text>
+      </view>
       <view class="activation-code">输入激活码></view>
     </view>
     <!-- end member-vessel -->
@@ -132,6 +134,7 @@ export default {
   flex-direction: column;
   align-items: center;
   padding: 0 30rpx;
+  padding-bottom: 44rpx;
   box-sizing: border-box;
   .member-name {
     padding-top: 106rpx;
@@ -155,15 +158,20 @@ export default {
     .equity-name {
       margin-top: 250rpx;
       font-family: AlimamaShuHeiTi;
-      font-size: 36rpx;
+      font-size: 40rpx;
       color: #ffc98e;
+      line-height: 56rpx;
       letter-spacing: 4rpx;
+      text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+      background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
     .separator {
       margin-top: 14rpx;
       width: 396rpx;
       height: 2rpx;
-      border: 2rpx solid rgba(253, 233, 205, 0.3);
+      background: rgba(253, 233, 205, 0.3);
     }
     .equity-subheading {
       margin-top: 10rpx;
@@ -173,7 +181,7 @@ export default {
       letter-spacing: 2px;
     }
     .equity-content {
-      margin-top: 44rpx;
+      margin-top: 64rpx;
       width: 100%;
       display: flex;
       align-items: center;
@@ -185,12 +193,14 @@ export default {
         height: 54rpx;
         border: 2rpx solid #ffdaad;
         border-radius: 28rpx;
+        box-sizing: border-box;
         font-size: 24rpx;
         font-weight: 500;
         color: #ffdaad;
         letter-spacing: 2rpx;
-        text-align: center;
-        line-height: 54rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -213,12 +223,18 @@ export default {
         font-size: 28rpx;
         color: #ffc98e;
         text-align: left;
+        line-height: 40rpx;
+        text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+        background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
     }
     .required-info-conent {
-      margin-top: 50rpx;
+      margin-top: 16rpx;
       .required-info-list {
         display: flex;
+        align-items: center;
         padding: 28rpx 0;
         box-sizing: border-box;
         border-bottom: 2px solid rgba(255, 255, 255, 0.1);
@@ -259,16 +275,18 @@ export default {
           background-size: 100% 100%;
         }
         .combo-list-title {
-          margin-top: 10rpx;
+          margin-top: 12rpx;
           font-size: 22rpx;
           font-weight: 400;
           color: #ffffff;
+          line-height: 30rpx;
         }
         .combo-list-price {
-          margin-top: 6rpx;
+          margin-top: 18rpx;
           font-size: 38rpx;
           font-weight: 400;
           color: #ebc398;
+          line-height: 30rpx;
         }
         .combo-list-time {
           position: absolute;
@@ -292,20 +310,30 @@ export default {
       width: 100%;
       height: 80rpx;
       background: #0f0e13;
-      box-shadow: 0 6rpx 16rpx 0 rgba(17, 15, 13, 0.39);
       border-radius: 16px;
-      border: 2rpx solid rgba(255, 218, 173, 1);
-      //border-image: linear-gradient(270deg, rgba(255, 239, 214, 1), rgba(255, 218, 173, 1)) 0 0;
-      text-align: center;
-      line-height: 80rpx;
-      font-size: 32rpx;
-      font-weight: 600;
-      color: #ffc98e;
+      border: 1rpx solid rgba(255, 218, 173, 1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      .payment-btn-font {
+        font-size: 32rpx;
+        font-weight: 600;
+        color: #ffc98e;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.5);
+        background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
     .activation-code {
       margin-top: 36rpx;
       font-size: 24rpx;
+      font-weight: 600;
       color: #ffc98e;
+      text-shadow: 0 2rpx 2rpx rgba(0, 0, 0, 0.5);
+      background: linear-gradient(270deg, #ffefd6 0%, #f1c18c 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
 }
