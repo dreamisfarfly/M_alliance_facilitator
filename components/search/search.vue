@@ -91,6 +91,7 @@ export default {
       width: 2rpx;
       height: 20rpx;
       background: #000000;
+      opacity: 0.1;
     }
     .search-info-operation-name {
       margin-left: 20rpx;
