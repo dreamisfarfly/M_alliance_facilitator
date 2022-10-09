@@ -17,10 +17,6 @@
                   src="/static/images/service-provider-icon.png"
                 />
               </view>
-              <img
-                class="shopkeeper-icon"
-                src="/static/images/shopkeeper-icon.png"
-              />
             </view>
             <view class="user-account">账号：534536</view>
           </view>
@@ -42,7 +38,7 @@
             <view class="member-info-list-count"
               >12<text class="unit">个</text></view
             >
-            <view class="member-info-list-vip-name">门店会员</view>
+            <view class="member-info-list-vip-name">我的门店</view>
           </view>
           <view class="separator"></view>
           <view class="member-info-list">
@@ -141,7 +137,7 @@ export default {
       .info {
         margin-left: 22rpx;
         .user-name-vessel {
-          margin-top: 12rpx;
+          margin-top: 18rpx;
           display: flex;
           align-items: center;
           .user-name {
@@ -150,6 +146,7 @@ export default {
             color: #ffffff;
             display: flex;
             align-items: center;
+            line-height: 44rpx;
             .identity-icon {
               margin-left: 14rpx;
               width: 78rpx;
@@ -167,6 +164,7 @@ export default {
           font-size: 24rpx;
           font-weight: 400;
           color: #ffffff;
+          line-height: 34rpx;
         }
       }
     }
@@ -205,6 +203,7 @@ export default {
           font-size: 40rpx;
           font-weight: 600;
           color: #333333;
+          line-height: 56rpx;
           .unit {
             font-size: 24rpx;
           }
@@ -214,6 +213,7 @@ export default {
           font-size: 24rpx;
           font-weight: 400;
           color: #999999;
+          line-height: 34rpx;
         }
       }
     }
@@ -225,22 +225,25 @@ export default {
       padding: 14rpx 24rpx 18rpx 26rpx;
       box-sizing: border-box;
       display: flex;
+      align-items: center;
       justify-content: space-between;
       .commission-info {
         .commission-info-count {
           font-size: 48rpx;
           font-weight: 600;
           color: #333333;
+          line-height: 66rpx;
         }
         .commission-info-name {
           font-size: 20rpx;
           font-weight: 500;
           color: #999999;
+          line-height: 28rpx;
         }
       }
       .commission-operation {
         display: flex;
-        padding-top: 24rpx;
+        align-items: center;
         .withdrawal-record {
           width: 128rpx;
           height: 50rpx;
