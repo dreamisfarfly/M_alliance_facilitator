@@ -29,7 +29,7 @@
     </view>
     <!-- end search-vessel -->
     <!-- start screen-vessel -->
-    <view class="screen-vessel">
+    <view class="screen-vessel" :style="{height: swiperHeight}">
       <!-- start screen-vessel-menu -->
       <view class="screen-vessel-menu">
         <!-- start screen-vessel-menu-list -->
@@ -135,6 +135,7 @@ export default {
           status: 1,
         },
       ],
+      swiperHeight: '',
     };
   },
   methods: {
@@ -158,6 +159,21 @@ export default {
         url: path,
       });
     },
+  },
+  mounted() {
+    // 计算高度
+    let that = this;
+    uni.getSystemInfo({
+      success: (resu) => {
+        // resu 可以获取当前屏幕的高度
+        const query = uni.createSelectorQuery();
+        query.select(".screen-vessel").boundingClientRect();
+        query.exec((res) => {
+          that.swiperHeight = resu.windowHeight - res[0].top + "px"; //屏幕的高度减去当前swiper距离顶部的高度就是剩余屏幕的高度 然后动态赋值给swiper
+        });
+      },
+      fail: (res) => {},
+    });
   },
 };
 </script>
