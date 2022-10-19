@@ -30,7 +30,7 @@ export default {
 
 <style lang="less" scoped>
 .commission-subsidiary-list {
-  padding: 24rpx 30rpx 28rpx 30rpx;
+  padding: 24rpx 30rpx 20rpx 30rpx;
   box-sizing: border-box;
   width: 100%;
   background: #ffffff;
@@ -50,12 +50,10 @@ export default {
     line-height: 34rpx;
   }
   .commission-btn {
-    width: 92rpx;
-    height: 42rpx;
+    padding: 8rpx 16rpx;
     border-radius: 8rpx;
     font-size: 20rpx;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
   .already-recorded {
