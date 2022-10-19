@@ -15,6 +15,7 @@
 <style lang="scss">
 	/*每个页面公共css */
 	@import "uview-ui/index.scss";
+	@import "common/css/anime.scss";
 	page {
 	  background: #f3f3f3;
 	}

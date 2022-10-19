@@ -1,0 +1,184 @@
+// 自动换行
+.word-wrap {
+    display: flex;
+    flex-flow: wrap;
+}
+//两端间距对齐
+.pacing-both-ends-aligned{
+    display: flex;
+    justify-content:space-around; 
+}
+
+// 竖排
+.vertical-interpose {
+    display: flex;
+    flex-direction: column;
+}
+
+//水平居中
+.horizontal-center {
+    display: flex;
+    align-items: center;
+}
+
+//居中
+.interpose {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+//两端对齐
+.justify {
+    display: flex;
+    justify-content: space-between;
+}
+
+//两端对齐居中
+.justify-horizontal-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*  外边距 */
+
+//左边距
+.m-l-5 {
+    margin-left: 10rpx;
+}
+
+.m-l-10 {
+    margin-left: 20rpx;
+}
+
+.m-l-15 {
+    margin-left: 30rpx;
+}
+
+.m-l-20 {
+    margin-left: 40rpx;
+}
+
+//右边距
+.m-r-5 {
+    margin-right: 10rpx;
+}
+
+.m-r-10 {
+    margin-right: 20rpx;
+}
+
+.m-r-15 {
+    margin-right: 30rpx;
+}
+
+.m-r-20 {
+    margin-right: 40rpx;
+}
+
+//上边距
+.m-t-5 {
+    margin-top: 10rpx;
+}
+
+.m-t-10 {
+    margin-top: 20rpx;
+}
+
+
+.m-t-15 {
+    margin-top: 30rpx;
+}
+
+
+.m-t-20 {
+    margin-top: 40rpx;
+}
+
+//下边距
+.m-b-5 {
+    margin-bottom: 10rpx;
+}
+
+.m-b-10 {
+    margin-bottom: 20rpx;
+}
+
+.m-b-15 {
+    margin-bottom: 30rpx;
+}
+
+.m-b-20 {
+    margin-bottom: 40rpx;
+}
+
+/* 内边距 */
+
+// 上内边距
+.p-t-5 {
+    padding-top: 10rpx;
+}
+
+.p-t-10 {
+    padding-top: 20rpx;
+}
+
+.p-t-15 {
+    padding-top: 30rpx;
+}
+
+.p-t-20 {
+    padding-top: 40rpx;
+}
+
+// 下内边距
+.p-b-5 {
+    padding-bottom: 10rpx;
+}
+
+.p-b-10 {
+    padding-bottom: 20rpx;
+}
+
+.p-b-15 {
+    padding-bottom: 30rpx;
+}
+
+.p-b-20 {
+    padding-bottom: 40rpx;
+}
+
+// 左内边距
+.p-l-5 {
+    padding-left: 10rpx;
+}
+
+.p-l-10 {
+    padding-left: 20rpx;
+}
+
+.p-l-15 {
+    padding-left: 30rpx;
+}
+
+.p-l-20 {
+    padding-left: 40rpx;
+}
+
+// 右边距
+.p-r-5 {
+    padding-right: 10rpx;
+}
+
+.p-r-10 {
+    padding-right: 20rpx;
+}
+
+.p-r-15 {
+    padding-right: 30rpx;
+}
+
+.p-r-20 {
+    padding-right: 40rpx;
+}

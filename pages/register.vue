@@ -237,7 +237,7 @@ export default {
         align-items: center;
         padding: 28rpx 0;
         box-sizing: border-box;
-        border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 2rpx solid rgba(255, 255, 255, 0.1);
         .required-info-list-name {
           font-size: 24rpx;
           font-weight: 400;
