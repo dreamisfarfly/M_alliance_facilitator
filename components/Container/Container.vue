@@ -14,7 +14,7 @@ export default {
 
 <style lang="less" scoped>
 .container{
-    padding: 0 20rpx;
+    padding: 0 30rpx;
     box-sizing: border-box;
 }
 </style>

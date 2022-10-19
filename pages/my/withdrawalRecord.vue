@@ -1,14 +1,13 @@
 <template>
-  <!-- start withdrawal-record -->
-  <view class="withdrawal-record">
+  <Container>
     <!-- start withdrawal-record-list -->
     <view
-      class="withdrawal-record-list"
+      class="withdrawal-record-list m-t-10"
       v-for="(item, key) in withdrawalRecordList"
       :key="key"
     >
       <!-- start withdrawal-record-list-header -->
-      <view class="withdrawal-record-list-header">
+      <view class="withdrawal-record-list-header justify">
         <view class="withdrawal-record-list-header-info"
           >订号单：{{ item.orderNo }}</view
         >
@@ -19,16 +18,16 @@
       <!-- end withdrawal-record-list-header -->
       <!-- start withdrawal-record-list-content -->
       <view class="withdrawal-record-list-content">
-        <view class="withdrawal-record-info">
+        <view class="horizontal-center">
           <view class="withdrawal-record-info-name">提现金额</view>
-          <view class="withdrawal-record-info-price"
+          <view class="withdrawal-record-info-price m-l-15"
             >￥{{ item.withdrawalAmount }}</view
           >
         </view>
-        <view class="withdrawal-info">
-          <view class="withdrawal-record-info">
+        <view class="justify-horizontal-center m-t-10">
+          <view class="horizontal-center">
             <view class="withdrawal-record-info-name">实际到账</view>
-            <view class="withdrawal-record-info-price"
+            <view class="withdrawal-record-info-price m-l-15"
               >￥{{ item.actualAccount }}</view
             >
           </view>
@@ -41,8 +40,7 @@
       <!-- end withdrawal-record-list-content -->
     </view>
     <!-- end withdrawal-record-list -->
-  </view>
-  <!-- end withdrawal-record -->
+  </Container>
 </template>
 
 <script>
@@ -52,21 +50,21 @@ export default {
       withdrawalRecordList: [
         {
           orderNo: "43268543252",
-          orderCreatedAt: "2022-08-08 10：30",
+          orderCreatedAt: "2022-08-08 10:30",
           withdrawalAmount: 2000.0,
           actualAccount: 2000.0,
           status: 0,
         },
         {
           orderNo: "43268543252",
-          orderCreatedAt: "2022-08-08 10：30",
+          orderCreatedAt: "2022-08-08 10:30",
           withdrawalAmount: 2000.0,
           actualAccount: 2000.0,
           status: 0,
         },
         {
           orderNo: "43268543252",
-          orderCreatedAt: "2022-08-08 10：30",
+          orderCreatedAt: "2022-08-08 10:30",
           withdrawalAmount: 2000.0,
           actualAccount: 2000.0,
           status: 1,
@@ -82,51 +80,31 @@ export default {
 </script>
 
 <style lang="less" scoped>
-.withdrawal-record {
+.withdrawal-record-list {
   padding: 0 30rpx;
-  .withdrawal-record-list {
-    margin-top: 20rpx;
-    padding: 0 30rpx;
-    box-sizing: border-box;
-    background: #ffffff;
-    box-shadow: 0 8rpx 16rpx 0 rgba(108, 119, 128, 0.05);
-    border-radius: 16rpx;
-    .withdrawal-record-list-header {
-      padding: 20rpx 0 14rpx 0;
-      border-bottom: 2rpx solid #f0f0f0;
-      box-sizing: border-box;
-      display: flex;
-      justify-content: space-between;
-      .withdrawal-record-list-header-info {
-        font-size: 24rpx;
-        font-weight: 400;
-        color: #999999;
-      }
+  background: #ffffff;
+  box-shadow: 0 8rpx 16rpx 0 rgba(108, 119, 128, 0.05);
+  border-radius: 16rpx;
+  .withdrawal-record-list-header {
+    padding: 20rpx 0 14rpx 0;
+    border-bottom: 2rpx solid #f0f0f0;
+    .withdrawal-record-list-header-info {
+      font-size: 24rpx;
+      font-weight: 400;
+      color: #999999;
     }
-    .withdrawal-record-list-content {
-      padding: 24rpx 0 22rpx 0;
-      .withdrawal-record-info {
-        display: flex;
-        align-items: center;
-        .withdrawal-record-info-name {
-          font-size: 24rpx;
-          font-weight: 400;
-          color: #333333;
-        }
-        .withdrawal-record-info-price {
-          margin-left: 30rpx;
-          font-size: 28rpx;
-          font-weight: 600;
-          color: #c78125;
-        }
-      }
-      .withdrawal-info {
-        width: 100%;
-        margin-top: 20rpx;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-      }
+  }
+  .withdrawal-record-list-content {
+    padding: 24rpx 0 22rpx 0;
+    .withdrawal-record-info-name {
+      font-size: 24rpx;
+      font-weight: 400;
+      color: #333333;
+    }
+    .withdrawal-record-info-price {
+      font-size: 28rpx;
+      font-weight: 600;
+      color: #c78125;
     }
   }
 }
